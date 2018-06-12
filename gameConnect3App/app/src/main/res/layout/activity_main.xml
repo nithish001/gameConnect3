@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/LinearLayout6"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+        android:foregroundGravity="center"
+        app:srcCompat="@drawable/tic" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:onClick="fun1"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:onClick="fun1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/LinearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout3"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:onClick="fun1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/LinearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/LinearLayout6"
+        app:layout_constraintTop_toTopOf="@+id/imageView"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout4"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginStart="50dp"
+        android:onClick="fun1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/LinearLayout5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout5"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="92dp"
+        android:layout_marginTop="92dp"
+        android:onClick="fun1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/LinearLayout7"
+        app:layout_constraintEnd_toStartOf="@+id/LinearLayout6"
+        app:layout_constraintStart_toEndOf="@+id/LinearLayout4"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout1">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout6"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:onClick="fun1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LinearLayout5"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout7"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:onClick="fun1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/LinearLayout8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout4"
+        app:layout_constraintVertical_bias="1.0"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout8"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:onClick="fun1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/LinearLayout7"
+        app:layout_constraintVertical_bias="1.0"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout9"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:onClick="fun1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/LinearLayout8"
+        app:layout_constraintTop_toTopOf="@+id/LinearLayout8"></LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout1"
+        app:layout_constraintGuide_begin="127dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="62dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="237dp"
+        android:layout_marginRight="237dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/LinearLayout3"
+        app:layout_constraintGuide_begin="198dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="129dp" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout10"
+        android:layout_width="wrap_content"
+        android:layout_height="101dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/winnerMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yellow won"
+            android:textSize="21dp" />
+
+        <Button
+            android:id="@+id/playAgainBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playAgain"
+            android:text="Play again" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
